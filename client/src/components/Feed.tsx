@@ -10,9 +10,8 @@ const Feed = () => {
             const response = await data.json();
             setPosts(response)
         }
-        fetchPosts()
     }, [])
-console.log(posts)
+
   return (
     <section>
         {posts ? <p></p> : ''}

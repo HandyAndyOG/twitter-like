@@ -1,16 +1,20 @@
 import React, { useEffect } from 'react';
 import './App.css';
 import Home from './components/Home'
-declare var gapi: any;
+import { Routes, Route } from "react-router-dom";
+import Login from './components/Login';
+import Logout from './components/Logout';
+import UserProfile from './components/UserProfile';
 
 
 function App() {
 
-
-
   return (
     <div className="App">
-      <Home />
+      <Login />
+      <Logout />
+      <p>User Info:</p>
+      <UserProfile />
     </div>
   );
 }
